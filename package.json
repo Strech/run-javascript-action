@@ -1,11 +1,22 @@
 {
-  "name": "javascript-console",
-  "version": "1.0.0",
-  "description": "Runs your javascript code with some pre-configured useful libraries",
+  "name": "run-javascript-action",
+  "version": "0.1.0",
+  "description": "Runs your javascript code with some pre-configured libraries",
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strech/run-havascript-action.git"
+  },
+  "keywords": ["GitHub", "Actions", "JavaScript"],
+  "author": "Sergey Fedorov (Strech)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Strech/run-javascript-action/issues"
+  },
+  "homepage": "https://github.com/Strech/run-javascript-action#readme",
   "dependencies": {
     "@actions/core": "^1.1.0",
     "node-fetch": "^2.6.0"

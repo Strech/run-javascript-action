@@ -1,18 +1,30 @@
+# Run JavaScript Action
+
 # Usage:
 
 ```yaml
 jobs:
-  comment:
-    # ... omitted ...
+  run_javascript:
+    name: Run my script
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: distribusion/actions/run-javascript@master
-        name: Run some JavaScript
-        id: js
+      - uses: Sterch/run-javascript-action@0.1.0
+        name: Get Berlin weather
+        id: weather
         with:
           script: |
-            console.log("Hello")
-            return "World"
-      - name: Output HTTP response
+            // NOTE: You can output to the standard console
+            console.log("You can output to the standard console")
+
+            // NOTE: You also will have access to some libraries
+            //       stored in the `$` object
+            const response = await $.fetch("https://wttr.in/Berlin", {
+              headers: { "User-Agent": "curl" }
+             }).then(res => res.text());
+
+            return response
+      - name: Print weather
         run: |
-          echo "${{ steps.js.result }}"
+          echo "${{ steps.weather.outputs.result }}"
 ```

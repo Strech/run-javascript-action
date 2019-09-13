@@ -7,10 +7,10 @@ inputs:
     required: true
 outputs:
   result:
-    description: "The result of yours code execution"
+    description: "The result of the given script execution"
 runs:
   using: "node12"
   main: "index.js"
 branding:
-  icon: "mic"
+  icon: "hexagon"
   color: "blue"
