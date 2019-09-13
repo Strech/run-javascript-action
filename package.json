@@ -1,0 +1,16 @@
+{
+  "name": "javascript-console",
+  "version": "1.0.0",
+  "description": "Runs your javascript code with some pre-configured useful libraries",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.1.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0"
+  }
+}
