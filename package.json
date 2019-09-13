@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Strech/run-havascript-action.git"
   },
-  "keywords": ["GitHub", "Actions", "JavaScript"],
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
   "author": "Sergey Fedorov (Strech)",
   "license": "MIT",
   "bugs": {

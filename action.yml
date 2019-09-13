@@ -1,6 +1,6 @@
 ---
-name: "Run your javascript code"
-description: "Runs your javascript code with some pre-configured useful libraries"
+name: "Run JavaScript Action"
+description: "Runs your JavaScript code with some pre-configured libraries"
 inputs:
   script:
     description: "Your hacker script"

@@ -7,10 +7,7 @@ async function run() {
 
     const AsyncFunction = Object.getPrototypeOf(async () => {}).constructor;
     const execute = new AsyncFunction("$", script);
-
-    const result = await execute({
-      fetch: fetch
-    });
+    const result = await execute({ fetch: fetch });
 
     core.setOutput("result", JSON.stringify(result));
   } catch (error) {
