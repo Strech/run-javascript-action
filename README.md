@@ -1,5 +1,7 @@
 # Run JavaScript Action
 
+TBD
+
 # Usage:
 
 ```yaml
@@ -9,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: Sterch/run-javascript-action@0.1.0
+      - uses: Strech/run-javascript-action@v0.1.0
         name: Get Berlin weather
         id: weather
         with:
