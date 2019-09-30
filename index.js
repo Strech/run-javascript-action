@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const fetch = require("node-fetch");
+const fs = require("fs");
 
 async function run() {
   try {
@@ -7,7 +8,7 @@ async function run() {
 
     const AsyncFunction = Object.getPrototypeOf(async () => {}).constructor;
     const execute = new AsyncFunction("$", script);
-    const result = await execute({ fetch: fetch });
+    const result = await execute({ fs: fs, fetch: fetch });
 
     core.setOutput("result", JSON.stringify(result));
   } catch (error) {
