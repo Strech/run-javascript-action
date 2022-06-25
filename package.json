@@ -23,7 +23,7 @@
   "homepage": "https://github.com/Strech/run-javascript-action#readme",
   "dependencies": {
     "@actions/core": "^1.1.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.7"
   },
   "devDependencies": {
     "eslint": "^6.3.0"
