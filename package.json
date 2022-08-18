@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/Strech/run-javascript-action#readme",
   "dependencies": {
-    "@actions/core": "^1.1.0",
+    "@actions/core": "^1.9.1",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
